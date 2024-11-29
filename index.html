@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="./img/amor.jpeg">
+    <title>Mi amor bello</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            background-color: #F0D6D6;
+        }
+        
+        .arriba{
+           background-color: #711212;
+           width: 2071px;
+           height: 70px;
+        }
+        
+        .title{
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+        }
+        
+        .fra{
+            font-family: "Playfair Display", serif;
+            font-size: 30px;
+            font-optical-sizing: auto;
+            font-weight: 100;
+            font-style: normal;
+        }
+        
+        .coc{
+            display: flex;
+            justify-content: center;
+            margin-left: 99px;
+            margin-right: 99px;
+            padding-top: 60px;
+        }
+        
+        .ort{
+            font-family: "Inknut Antiqua", serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 20px;
+        }
+        
+        .jo{
+            display: flex;
+            justify-content: center;
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+        
+        .jo img {
+            width: 500px;
+            height: 500px;
+            border-radius: 40px;
+        }
+        
+        .jo p{
+            font-family: "Inknut Antiqua", serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 20px;
+            margin-left: 30px;
+        }
+        
+        .title-2{
+            display: flex;
+            justify-content: center;
+            padding-top: 55px;
+        }
+        
+        .fra-2{
+            font-family: "Playfair Display", serif;
+            font-size: 30px;
+            font-optical-sizing: auto;
+            font-weight: 100;
+            font-style: normal;
+        }
+        
+        .coc-2{
+            display: flex;
+            justify-content: center;
+            margin-left: 99px;
+            margin-right: 99px;
+            padding-top: 60px;
+        }
+        
+        .ort-2{
+            font-family: "Inknut Antiqua", serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 20px;
+        }
+        
+        .carrusel-tex{
+            display:flex ;
+            padding: 0px 20px 0 20px;
+            margin-top:  4%;
+            font-family: "Playfair Display", serif;
+        }
+        .doña{
+            display: flex;
+            width: 20%;
+            align-items: center;
+            justify-content: center;
+        }
+        .doña p{
+            font-size: 30px;
+        }
+        
+        .carousel{
+            position: relative;
+            height: 600px;
+            width: 40%;
+            margin: 0 auto;
+        }
+        .carousel_image{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+        .carousel_track-container{
+            background: lightblue;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+        }
+        .carousel_track{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            position: relative;
+            height: 100%;
+            transition: transform 250ms ease-in;
+        }
+        .carousel_slide{
+            position: absolute;
+            top: 0;
+            left:0;
+            bottom: 0;
+            width: 100%;
+        }
+        .carousel_button{
+            position: absolute;
+            top:50%;
+            transform: translateY(-50%);
+            background: transparent;
+            border: 0;
+            cursor: pointer;
+        }
+        .carousel_button--left{
+            left: -40px;
+        }
+        .carousel_button--right{
+            right: -40px;
+        }
+        .carousel_button img{
+            width: 18px;
+        }
+        .carousel_nav{
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        .carousel_indicator{
+            border:0;
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            background: rgba(0,0,0,0.3);
+            margin: 0 10px;
+            cursor: pointer;
+        }
+        .carousel_indicator.current-slide{
+            background: rgba(0,0,0,0.75);
+        }
+        .is-hidden{
+            display: none;
+        }
+
+        @media (max-width: 1600px) and (max-height: 720px) {
+
+            *{
+                padding: 0;
+                margin: 0;
+                background-color: #F0D6D6;
+            }
+
+            .text-1{
+                padding-left: 20px;
+            }
+
+            .arriba {
+                width: 100%; /* Adaptable */
+             }
+
+            .title{
+                display: flex;
+                justify-content: center;
+                padding-top: 50px;
+            }
+
+            .coc{
+                display: flex;
+                justify-content: center;
+                margin: 0px; 
+                padding-top: 60px;
+            }
+
+            .ort{
+                font-family: "Inknut Antiqua", serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 15px;
+            }
+
+            .jo{
+                display: flex;
+                justify-content: center;
+                margin-left: 10px;
+               
+            }
+
+            .jo img {
+                width: 300px;
+                height: 300px;
+                border-radius: 20px;
+            }
+
+            .jo p{
+                font-family: "Inknut Antiqua", serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 15px;
+                margin-left: 30px;
+            }
+
+            .title-2{
+                display: flex;
+                justify-content: center;
+                padding-top: 55px;
+            }
+            
+            .fra-2{
+                font-family: "Playfair Display", serif;
+                font-size: 30px;
+                font-optical-sizing: auto;
+                font-weight: 100;
+                font-style: normal;
+            }
+            
+            .coc-2{
+                display: flex;
+                justify-content: center;
+                padding-left: 20px;
+                margin: 0px;
+                padding-top: 60px;
+            }
+            
+            .ort-2{
+                font-family: "Inknut Antiqua", serif;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 15px;
+            }
+            
+            .doña{
+                display: flex;
+                width: 20%;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .doña p{
+                font-size: 30px;
+            }
+            
+        }
+
+    </style>
+</head>
+<header>
+    <section class="arriba"></section>
+</header>
+<body>
+    <div class="title">
+        <h2 class="fra">Si tan solo fuera tan facil de explicar...</h2>
+    </div>
+    <section class="text-1">
+        <div class="coc">
+            <p class="ort">
+                Si tan solo las palabras bastaran para explicar todo aquello que siento por ti, si todo fuera tan sencillo no podria decir que me enamoré. Cautivaste mi corazon mas rapido que mis ojos, aun asi estos querian quedarse clavados en ese microinstante en el que te miré. Nunca pensé enamorarme tan rapido, pero solo con mirarte me prendaste de ti, hablandome me dejaste encantado, con tu sonrisa me dejaste obsesionado y de tus ojos me hiciste fanatico.
+            </p>
+        </div>
+        <section>
+            <div class="jo">
+                <img src="./img/amor.jpeg" alt="">
+                <p>Y si tan solo fuera asi de sencillo explicar tu belleza, perderia el sentido de su especialidad, pero no de lo especial que es para mi, ese algo que ni siquiera mirando tres mil veces una y otra vez seria capaz de explicar, ese algo que desde el primer instante que te vi me dejó enamorado, a medida que te fui conociendo el sentimiento solo se intensificó y aún soy incapaz de saber que es aquello que me tiene tan enamorado de ti, aunque realmente prefiero que siga asi, prefiero ser ignorante de ese hecho, prefiero seguirme enamorando perdidamente de ti, prefiero el sentimiento de que siempre al verte mi corazón se acelere, mis manos tiemblen y me sienta como niño emocionado, prefiero mil veces el verte y enamorarme de nuevo de ti, te prefiero a ti y solo a ti, prefiero mil veces a la persona de la cual me enamoré. Amo con locura todo de ti, me enamoraste completamente y ni cuenta te diste, me prendaste a ti, me dejaste pensando solo en volverte a ver dia a dia. </p>
+            </div>
+        </section>
+    </section>
+    <div class="title-2">
+        <h2 class="fra-2">Si tan solo fueras capaz de mirarte como yo...</h2>
+    </div>
+    <section class="text-2">
+        <div class="coc-2">
+            <p class="ort-2">
+                Te quedarias encandilada por tu mirar, te quedarias contemplando cada aspecto de ti, disfrutarias de cada segundo de ti, porque tu belleza es algo incomparable, algo imposible de explicar siquiera con palabras, si te vieras a ti misma con mis ojos, entenderias mi actuar, entendirias por que me vuelvo bobo, por que me no funciono como siempre, porque tu misma te enamorarias de quien eres, de como te ves, de como hablas y como miras, te enamorarias de ti como yo vivo enamorado de ti, enamorado de tu carita, enamorado de tus ojos, de tu sonrisa y de tus labios, de tu pelo, de tu manera de reir, de tus chillidos y de tus besos, vivo enamorado de ti en cada momento y si por mi fuera te regalaria mis ojos, solamente para que te enamoraras tan locamente de ti misma como yo lo estoy cada segundo de mis dias.
+            </p>
+        </div>
+    </section>
+    <div class="carrusel-tex">
+        <div class="doña">
+            
+            <p class="d1">La mejor sonrisa</p>
+        </div>
+        <div class="carousel">
+            <button class="carousel_button carousel_button--left is-hidden">
+                <img src="./img/izquierda.png" alt="">
+            </button>
+            <div class="carousel_track-container">
+                <ul class="carousel_track">
+                    <li class="carousel_slide current-slide">
+                        <img class="carousel_image" src="./img/as.jpeg" alt="">
+                    </li>
+                    <li class="carousel_slide">
+                        <img class="carousel_image" src="./img/es.jpeg" alt="">
+                    </li>
+                    <li class="carousel_slide">
+                        <img class="carousel_image" src="./img/is.jpeg" alt="">
+                    </li>
+                </ul>
+            </div>
+            <button class="carousel_button carousel_button--right">
+                <img src="./img/derecha.png" alt="">
+            </button>
+            <div class="carousel_nav">
+                <button class="carousel_indicator current-slide"></button>
+                <button class="carousel_indicator"></button>
+                <button class="carousel_indicator"></button>
+            </div>
+        </div>
+        <div class="doña">
+
+            <p class="d2">de mi bella estrella</p>
+        </div>
+    </div>
+    <script>
+        const track = document.querySelector('.carousel_track');
+        const slides = Array.from(track.children);
+        const nextButton = document.querySelector('.carousel_button--right');
+        const prevButton = document.querySelector('.carousel_button--left');
+        const dotsNav = document.querySelector('.carousel_nav');
+        const dots = Array.from(dotsNav.children);
+        const slideSize = slides[0].getBoundingClientRect();
+        const slideWidth = slideSize.width;
+
+
+        // slides[0].style.left = 0;
+        // slides[1].style.left = slideWidth + 'px';
+        // slides[2].style.left = slideWidth * 2 + 'px';
+
+        const setSlidePosition = (slide, index) => {
+            slide.style.left = slideWidth * index + 'px';
+        }
+        slides.forEach(setSlidePosition);
+
+
+        const moveToSlide = (track, currentSlide, targetSlide) => {
+            track.style.transform = 'translateX(-' + targetSlide.style.left + ')';
+            currentSlide.classList.remove('current-slide');
+            targetSlide.classList.add('current-slide');
+        }
+
+
+        const updateDots = (currentDot, targetDot) => {
+            currentDot.classList.remove('current-slide');
+            targetDot.classList.add('current-slide');
+        }
+
+        const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
+            if (targetIndex === 0) {
+                prevButton.classList.add('is-hidden');
+                nextButton.classList.remove('is-hidden');
+            } else if (targetIndex === slides.length - 1) {
+                prevButton.classList.remove('is-hidden');
+                nextButton.classList.add('is-hidden');
+            } else {
+                prevButton.classList.remove(is - hidden);
+                nextButton.classList.remove(is - hidden);
+            }
+        }
+
+        //click right,move slide to right
+        nextButton.addEventListener('click', e => {
+            const currentSlide = track.querySelector('.current-slide');
+            const nextSlide = currentSlide.nextElementSibling;
+            const currentDot = dotsNav.querySelector('.current-slide');
+            const nextDot = currentDot.nextElementSibling;
+            const nextIndex = slides.findIndex(slide => slide === nextSlide);
+
+            moveToSlide(track, currentSlide, nextSlide);
+            updateDots(currentDot, nextDot);
+            hideShowArrows(slides, prevButton, nextButton, nextIndex);
+
+        })
+        //click left,move slide to left
+        prevButton.addEventListener('click', e => {
+            const currentSlide = track.querySelector('.current-slide');
+            const prevSlide = currentSlide.previousElementSibling;
+            const currentDot = dotsNav.querySelector('.current-slide');
+            const prevDot = currentDot.previousElementSibling;
+            const prevIndex = slides.findIndex(slide => slide === prevSlide);
+
+            moveToSlide(track, currentSlide, prevSlide);
+            updateDots(currentDot, prevDot);
+            hideShowArrows(slides, prevButton, nextButton, prevIndex);
+        })
+
+        //click nav indicators,move to slide
+        dotsNav.addEventListener('click', e => {
+            const targetDot = e.target.closest('button');
+            if (!targetDot) return;
+            const currentSlide = track.querySelector('.current-slide');
+            const currentDot = dotsNav.querySelector('.current-slide');
+            const targetIndex = dots.findIndex(dot => dot === targetDot);
+            const targetSlide = slides[targetIndex];
+            moveToSlide(track, currentSlide, targetSlide);
+            updateDots(currentDot, targetDot);
+            hideShowArrows(slides, prevButton, nextButton, targetIndex);
+
+        });
+
+
+    </script>
+</body>
+</html>
